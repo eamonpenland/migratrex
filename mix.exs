@@ -3,13 +3,13 @@ defmodule Migratrex.Mixfile do
 
   def project do
     [app: :migratrex,
-     version: "0.0.1",
+     version: "0.0.2",
      elixir: "~> 1.2",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps,
      name: "Migratrex",
-     source_url: "https://github.com/andrewtimberlake/migratrex",
+     source_url: "https://github.com/dreallday/migratrex",
      description: "Build Ecto models and tests from existing database (Postgresql)",
      package: package]
   end
@@ -40,6 +40,6 @@ defmodule Migratrex.Mixfile do
   defp package do
     [maintainers: ["Andrew Timberlake"],
      licenses: ["MIT"],
-     links: %{"Github" => "https://github.com/andrewtimberlake/migratrex"}]
+     links: %{"Github" => "https://github.com/dreallday/migratrex"}]
   end
 end
