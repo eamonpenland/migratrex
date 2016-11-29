@@ -33,7 +33,8 @@ defmodule Migratrex.Mixfile do
   defp deps do
     [
       {:ecto, "~> 2.0"},
-      {:postgrex, ">= 0.0.0"}
+      {:postgrex, ">= 0.0.0"},
+      {:ex_doc, ">= 0.0.0", only: :dev}
     ]
   end
 
