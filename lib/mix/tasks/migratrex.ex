@@ -25,7 +25,7 @@ defmodule Mix.Tasks.Migratrex do
     Enum.each repos, fn repo ->
       Logger.configure(level: :info)
       ensure_repo(repo, args)
-      {:ok, _pid} = ensure_started(repo, [])
+      {:ok, _pid, _apps} = ensure_started(repo, [])
 
       namespace = Utils.get_namespace(repo)
 
