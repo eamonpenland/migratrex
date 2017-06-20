@@ -20,6 +20,7 @@ defmodule Mix.Tasks.Migratrex do
 
   @doc false
   def run(args) do
+    IO.puts "helloooooooo"
     repos = parse_repo(args)
 
     Enum.each repos, fn repo ->
