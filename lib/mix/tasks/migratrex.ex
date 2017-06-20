@@ -262,6 +262,7 @@ defmodule Mix.Tasks.Migratrex do
 
   defp required_columns(columns) do
     columns
+    |> IO.inspect
     |> Enum.filter(&(&1.is_nullable == "NO" and &1.column_default == nil))
   end
 
