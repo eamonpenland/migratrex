@@ -20,7 +20,6 @@ defmodule Mix.Tasks.Migratrex do
 
   @doc false
   def run(args) do
-    IO.puts "helloooooooo"
     repos = parse_repo(args)
 
     Enum.each repos, fn repo ->
@@ -263,8 +262,7 @@ defmodule Mix.Tasks.Migratrex do
 
   defp required_columns(columns) do
     columns
-    |> IO.inspect
-    |> Enum.filter(&(&1.is_nullable == "NO" and &1.column_default == nil))
+    |> Enum.filter(&(&1.column_default == nil))
   end
 
   @field_types %{
