@@ -7,11 +7,11 @@ defmodule Migratrex.Mixfile do
      elixir: "~> 1.2",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     deps: deps,
+     deps: deps(),
      name: "Migratrex",
      source_url: "https://github.com/dreallday/migratrex",
      description: "Build Ecto models and tests from existing database (Postgresql)",
-     package: package]
+     package: package()]
   end
 
   # Configuration for the OTP application
